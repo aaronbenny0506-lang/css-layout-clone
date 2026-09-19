@@ -1,4 +1,4 @@
-# Tally — Website Layout Clone
+# Tally : Website Layout Clone
 
 A from-scratch homepage build for a fictional freelance time-tracking & invoicing product, "Tally." Built with plain HTML, CSS (Grid + Flexbox) and a small amount of vanilla JS, no frameworks, no CSS libraries.
 
