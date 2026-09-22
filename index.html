@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tally — Time tracking that pays for itself</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap header-row">
+    <!-- Pure CSS nav toggle: no JS. This checkbox must stay before .main-nav
+         and before .nav-toggle in the markup so the ~ sibling selector works. -->
+    <input type="checkbox" id="navCheck" class="nav-check">
+
+    <a class="logo" href="#top">Tally<span class="logo-dot">.</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#features">Product</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#stories">Stories</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="link-quiet" href="#">Log in</a>
+      <a class="btn btn-primary" href="#pricing">Start free</a>
+      <label class="nav-toggle" for="navCheck" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker">For freelancers who bill by the hour</p>
+        <h1>Every billable minute, <em>accounted for.</em></h1>
+        <p class="hero-sub">Tally runs quietly in the background while you work, then turns your hours into an invoice your clients pay in a click. No spreadsheets, no guesswork, no awkward reminders.</p>
+
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary btn-lg">Start tracking free</a>
+          <a href="#features" class="btn btn-ghost btn-lg">See how it works</a>
+        </div>
+
+        <p class="hero-trust">No card required · 14-day full access · Cancel anytime</p>
+
+        <!-- Required project attribution -->
+        <h3 class="attribution" title="Website Layout Clone done by aaronbennyphilip@mulearn">
+          Website Layout Clone — done by <span class="muid">aaronbennyphilip@mulearn</span>
+        </h3>
+      </div>
+
+      <div class="hero-panel" aria-hidden="false">
+        <div class="ledger-card">
+          <div class="ledger-card-top">
+            <span class="ledger-label">Currently tracking</span>
+            <span class="ledger-live"><span class="live-dot" aria-hidden="true"></span> live</span>
+          </div>
+          <p class="ledger-project">Meridian Studio — Brand refresh</p>
+          <p class="ledger-timer" id="liveTimer">02:14<span class="timer-colon">:</span>37</p>
+          <div class="ledger-rule"></div>
+          <ul class="ledger-rows">
+            <li><span>Mon</span><span class="mono">3h 20m</span></li>
+            <li><span>Tue</span><span class="mono">4h 05m</span></li>
+            <li><span>Wed</span><span class="mono">2h 48m</span></li>
+            <li class="ledger-rows-total"><span>This week</span><span class="mono">21h 40m</span></li>
+          </ul>
+          <div class="ledger-rule"></div>
+          <div class="ledger-invoice">
+            <span>Ready to invoice</span>
+            <span class="mono">$2,168.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip">
+    <div class="wrap trust-row">
+      <span class="trust-label">Trusted by independents at</span>
+      <ul class="trust-logos">
+        <li>Meridian Studio</li>
+        <li>Northbound</li>
+        <li>Ferro &amp; Kin</li>
+        <li>Odalen Co.</li>
+        <li>Palefire</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES (ledger rows) ============ -->
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>One ledger. Every step of getting paid.</h2>
+        <p>Tally follows the shape of freelance work itself — track, tidy up, send, get paid — instead of bolting time tracking onto software built for someone else's workflow.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-row feature-row--wide">
+          <span class="feature-mark">Track</span>
+          <div class="feature-body">
+            <h3>Start a timer without opening an app</h3>
+            <p>A single keyboard shortcut starts and stops the clock from anywhere on your machine. Tally notices which app has focus and tags the entry to the right client automatically.</p>
+          </div>
+        </article>
+
+        <article class="feature-row">
+          <span class="feature-mark">Tidy</span>
+          <div class="feature-body">
+            <h3>Fix a messy week in minutes</h3>
+            <p>Drag entries between projects, split a block across two clients, or merge duplicate timers — your week stays honest without hours of admin.</p>
+          </div>
+        </article>
+
+        <article class="feature-row">
+          <span class="feature-mark">Send</span>
+          <div class="feature-body">
+            <h3>Invoices write themselves</h3>
+            <p>Approved hours become a line-itemed invoice, branded with your rates and terms, ready to send before your coffee's cold.</p>
+          </div>
+        </article>
+
+        <article class="feature-row feature-row--wide">
+          <span class="feature-mark">Get paid</span>
+          <div class="feature-body">
+            <h3>Clients pay from the invoice itself</h3>
+            <p>Card, bank transfer, or wallet — clients pay right where they read the invoice, and Tally marks the hours settled the moment it clears.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NUMBERS ============ -->
+  <section class="numbers" id="numbers">
+    <div class="wrap numbers-grid">
+      <div class="numbers-copy">
+        <h2>The hours you'd otherwise write off</h2>
+        <p>Freelancers underbill constantly — not from dishonesty, but from memory. Tally's numbers come from six years of anonymized usage across the people who trust it with their timesheets.</p>
+      </div>
+      <ul class="numbers-list">
+        <li>
+          <span class="numbers-figure mono">23%</span>
+          <span class="numbers-caption">more billable hours captured in the first month</span>
+        </li>
+        <li>
+          <span class="numbers-figure mono">9 days</span>
+          <span class="numbers-caption">average drop in time-to-payment</span>
+        </li>
+        <li>
+          <span class="numbers-figure mono">41,000+</span>
+          <span class="numbers-caption">independents running Tally today</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ STORY / TESTIMONIAL ============ -->
+  <section class="story" id="stories">
+    <div class="wrap story-grid">
+      <blockquote>
+        <p>“I used to lose four or five hours a month just reconstructing timesheets from memory. Tally already knew. My invoices went from guesses to receipts.”</p>
+        <footer>
+          <span class="story-name">Priya Nair</span>
+          <span class="story-role">Freelance motion designer, Meridian Studio</span>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Pricing that scales with your client list</h2>
+        <p>Start free. Upgrade the week you sign a second retainer.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="plan-price"><span class="mono">$0</span><span class="plan-period">/month</span></p>
+          <p class="plan-desc">For testing the waters with one or two clients.</p>
+          <ul class="plan-list">
+            <li>Unlimited time tracking</li>
+            <li>Up to 2 active clients</li>
+            <li>Basic invoicing</li>
+          </ul>
+          <a href="#" class="btn btn-ghost btn-block">Start free</a>
+        </div>
+
+        <div class="plan plan--featured">
+          <p class="plan-tag">Most freelancers pick this</p>
+          <h3>Independent</h3>
+          <p class="plan-price"><span class="mono">$14</span><span class="plan-period">/month</span></p>
+          <p class="plan-desc">Everything you need to run a solo practice.</p>
+          <ul class="plan-list">
+            <li>Unlimited clients &amp; projects</li>
+            <li>Branded, auto-generated invoices</li>
+            <li>Direct card &amp; bank payments</li>
+            <li>Weekly summary emails</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">Start 14-day trial</a>
+        </div>
+
+        <div class="plan">
+          <h3>Studio</h3>
+          <p class="plan-price"><span class="mono">$34</span><span class="plan-period">/month</span></p>
+          <p class="plan-desc">For small teams billing under one roof.</p>
+          <ul class="plan-list">
+            <li>Everything in Independent</li>
+            <li>Up to 5 teammates</li>
+            <li>Shared client ledgers</li>
+          </ul>
+          <a href="#" class="btn btn-ghost btn-block">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta-banner">
+    <div class="wrap cta-banner-inner">
+      <h2>Your next invoice is already half-written.</h2>
+      <a href="#pricing" class="btn btn-primary btn-lg">Start tracking free</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top">Tally<span class="logo-dot">.</span></a>
+        <p>Time tracking and invoicing for people who bill by the hour, not the headcount.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#">Integrations</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#stories">Stories</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Tally. A layout-clone exercise — not a real product.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
